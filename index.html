@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Studio Ghili Movies</title>
+      <style>
+        body {
+          background-color: rgb(214, 210, 210);
+        }
+
+        .container {
+          max-width: 1114px;
+          margin: auto;
+        }
+
+        .movies {
+          padding: 0;
+        }
+
+        .aMovie {
+          background-color: #ffffff;
+          margin: 20px;
+          border-radius: 5px;
+          padding: 1rem;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-areas: "desc desc score";
+          gap: 20px;
+        }
+
+        .description {
+          grid-area: desc;
+        }
+
+        .score {
+          grid-area: score;
+          padding-top: 2rem;
+          justify-self: end;
+        }
+
+        small {
+          padding-left: 2rem;
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        .dir {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+        }
+
+        .director {
+          padding-right: 1rem;
+        }
+
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Studio Ghili Movies</h1>
+      <p class="rank">Rank from the best to worse</p>
+      <ul class="movies"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
